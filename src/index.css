@@ -93,3 +93,10 @@ button:focus-visible {
   width: 300px;
 }
 
+.button-container{
+
+}
+
+.button-reset{
+  width: 1000px;
+}
