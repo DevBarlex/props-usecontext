@@ -32,12 +32,10 @@ export const CalculatorProvider=({children})=>{
         </CalculatorContext.Provider>
         )
 };
-   
+
 //exportamos el hook para utilizar el contexto
 export const useNumber= ()=> useContext(CalculatorContext)
-//FUNCION AGREGAR NÚMERO LISTA
-//SUMAR NÚMEROS SELECCIONADOS
-//RESTABLECER CALCULADORA
+
 
 
 

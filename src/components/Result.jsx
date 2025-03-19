@@ -12,10 +12,9 @@ const Result = () => {
     return (
         <>
         <div className={styles.Result}>
-            <h1>Resultado</h1>
             <h2>{numbers.join('+')}</h2>
             <h3>Total: {sumNumbers()}</h3>
-            <button onClick={resetCalculator} className="boton-reset">Reset</button>
+            <button onClick={resetCalculator} className="boton-reset">C</button>
         </div>
         <div>
             <Link to="/">Calculadora</Link>
@@ -25,4 +24,3 @@ const Result = () => {
 };
 
 export default Result; 
-//CREAREMOS BOTÓN RESET ---> dejar valores a 0

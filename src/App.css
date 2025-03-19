@@ -7,15 +7,7 @@
   background-color: red;
 }
 
-.calculator {
-  margin: 20px;
-}
 
-.buttons {
-  display: grid;
-  grid-template-columns: repeat(3, 50px);
-  grid-gap: 10px;
-}
 
 button {
   width: 50px;
@@ -29,5 +21,6 @@ button {
 
 
 .button-reset{
-  width: 115px;
+  width: 100px;
 }
+

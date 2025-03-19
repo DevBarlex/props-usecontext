@@ -14,24 +14,20 @@ const Calculator = ()=>{
 
 return (
     <>
-        <div className={styles.Calculator}>
+        <div className={styles.mainContainer}>
             <h1>Calculadora</h1>
-            <h2>{selectNumber}</h2>
-            <h3>{numbers.join('+')}</h3>
-            {[1, 2, 3, 4, 5, 6, 7, 8, 9, 0].map((num) => (
-            <button 
-                key={num} 
-                onClick={() => addNumber(num)} 
-                className="number-button">
-                {num}
-            </button>
-            ))}
-        </div>
-        <div >
-            <button onClick={resetCalculator} className="boton-reset">Reset</button>
-        </div>
-        <div >
-            <Link to="/result">Resultado</Link>
+            <div  className={styles.BotonesContainer}>
+                {[1, 2, 3, 4, 5, 6, 7, 8, 9, 0].map((num) => (
+                <button 
+                    key={num} 
+                    onClick={() => addNumber(num)}
+                    className={numbers.includes(num) ? styles.buttonSelected : ''}> {/*clase que deja marcada selección númerica*/}
+                    {num} 
+                </button>
+                ))}
+                <button onClick={resetCalculator} className="boton-reset">C</button>
+                <Link to="/result" className="boton-reset"><button>=</button></Link>
+            </div>
         </div>
         </>
     )
