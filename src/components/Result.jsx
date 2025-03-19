@@ -11,13 +11,14 @@ const Result = () => {
     const { numbers, sumNumbers, resetCalculator } = useNumber();  // Obtenemos el número desde el contexto
     return (
         <>
-        <div className={styles.Result}>
+        <div className={styles.ResultContainer}>
             <h2>{numbers.join('+')}</h2>
             <h3>Total: {sumNumbers()}</h3>
-            <button onClick={resetCalculator} className="boton-reset">C</button>
-        </div>
-        <div>
-            <Link to="/">Calculadora</Link>
+            <button onClick={resetCalculator} className={styles.Reset}>C</button>
+        
+            <div>
+                <Link className={styles.Calculadora} to="/">Ir a Calculadora</Link>
+            </div>
         </div>
         </>
     );

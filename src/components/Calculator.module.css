@@ -1,14 +1,4 @@
-.Calculator {
-    width: 100%;
-    color: rgb(122, 118, 118);
-    padding: 20px;
-    text-align: center;
-    font-size: 18px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    display: flex;
-    margin-left: 550px;
-}
+
 
 .mainContainer {
     display: flex;
@@ -16,6 +6,11 @@
     align-items: center;    
     height: 100vh;          
     flex-direction: column; 
+    width: 100%;
+    color: rgb(105, 102, 102);
+    padding: 20px;
+    font-size: 18px;
+    margin-left: 350px;
 }
 
 .BotonesContainer {
@@ -24,6 +19,7 @@
     grid-gap: 10px;
     margin-top: 0;  
 }
+
 
 .buttonSelected {
     background-color: #8eb39d; /* Color verde para el número seleccionado */
